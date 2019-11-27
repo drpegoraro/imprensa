@@ -3,26 +3,30 @@ pragma solidity 0.5.13;
 contract imprensa
 
 {
-    constructor
+    string public textoDaMateria;
+    string public nomeJornalista;
+    string public webSite;
+    
+    constructor 
     (
-    string memory NomeJornalista,
-    string memory  WebSite,
-    uint256 DataPublicacao
-    )
+        string memory materia,
+        string memory jornalista,
+        string memory site
+        )
     public
+    { 
+        jornalista= nomeJornalista;
+        site=webSite;
+        materia=textoDaMateria;
+    }
     
-    Jornalista= NomeJornalista;
-    Site=WebSite;
-    Data=DataPublicacao;
-    Materia=MateriaJornalistica;
-    
-    struct
-    string memory MateriaJornalistica;
-    string memory PesquisaMateria;
-    
-    function PesquisaMateriaJornalistica () return view (MateriaJornalistica)
+    function pesquisaMateria () public
     {
-        mapping (PesquisaMateria);
-        returns
+        mapping(address => materia)
+    }
+    
+    function PublicaHash (uint blockNumber) public
+    {
+        blockhash;
     }
 }
